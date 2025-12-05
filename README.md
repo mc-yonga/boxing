@@ -37,6 +37,23 @@ Get your API key from: https://makersuite.google.com/app/apikey
 streamlit run app.py
 ```
 
+## Deploy to Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/mc-yonga/boxing)
+
+### Manual Deployment Steps
+
+1. Push your code to GitHub
+2. Go to [Railway](https://railway.app/) and create a new project
+3. Connect your GitHub repository
+4. Add environment variable:
+   - `GOOGLE_API_KEY`: Your Google Gemini API key
+5. Railway will automatically detect and deploy using:
+   - **Procfile** (simplest method) or
+   - **Dockerfile** (more control)
+
+Railway will automatically assign a PORT and make your app publicly accessible.
+
 ## Technology Stack
 
 - Streamlit - Web interface
